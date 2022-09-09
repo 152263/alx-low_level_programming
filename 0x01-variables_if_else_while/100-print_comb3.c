@@ -3,33 +3,37 @@
 /**
  * main - combination of brains and materials
  *
- * Description: prints all possible different combinations of two digits.
+ * Description: prints all possible different combinations of two digits
  *
  * Return: 0
  */
 int main(void)
 {
-	int i, j;
+	int i, a;
 
 	i = 48;
-	j = 48;
-	while (i < 58)
-	{
-		j = 48;
-		while (j < 58)
-		{
-			putchar(i);
-			putchar(j);
+	a = 48;
 
-			if (i < 57 || j < 57)
+	while (a < 58)
+	{
+		i = 48;
+		while (i < 58)
+		{
+			if (a != i && a < i)
 			{
-				putchar(44);
-				putchar(32);
+				putchar(a);
+				putchar(i);
+				if (i == 57 && a == 56)
+				{
+					break;
+				}
+				putchar(',');
+				putchar(' ');
 			}
-			j++;
+			i++;
 		}
-		i++;
+		a++;
 	}
-	putchar(10);
+	putchar('\n');
 	return (0);
 }
