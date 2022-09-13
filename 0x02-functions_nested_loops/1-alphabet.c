@@ -1,4 +1,4 @@
-include "main"
+#include "main.h"
 
 /**
  * main - entry
@@ -7,5 +7,14 @@ include "main"
  *
  * Return: 0
  */
-int main(void)
+void print_alphabet(void)
+{
+	char r = 'a';
 
+		while (r <= 'z')
+		{
+			_putchar(r);
+			r++;
+		}
+	_putchar('\n');
+}
