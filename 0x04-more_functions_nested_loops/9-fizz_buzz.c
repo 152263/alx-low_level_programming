@@ -15,16 +15,18 @@ int main(void)
 	for (q = 1; q <= 100; q++)
 	{
 		if ((q % 3) == 0 && (q % 5) == 0)
-			printf("FizzBuzz ");
+			printf("FizzBuzz");
 
 		else if ((q % 3) == 0)
-			printf("Fizz ");
+			printf("Fizz");
 
 		else if ((q % 5) == 0)
-			printf("Buzz ");
+			printf("Buzz");
 
 		else
-			printf("%d ", q);
+			printf("%d", q);
+
+		printf(" ");
 
 	}
 
