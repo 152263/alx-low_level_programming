@@ -14,7 +14,7 @@ int main(void)
 
 	for (q = 1; q <= 100; q++)
 	{
-		if ((q % 3) == 0 && (q % 5) == 0)
+		if ((q % 15) == 0)
 			printf("FizzBuzz");
 
 		else if ((q % 3) == 0)

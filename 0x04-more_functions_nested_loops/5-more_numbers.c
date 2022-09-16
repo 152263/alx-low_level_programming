@@ -1,8 +1,7 @@
 #include "main.h"
 
 /**
- * print_sign - prints the sign of a number
- * @n: n is an integer
+ * more_numbers - Prints the numbers 0-14 ten times.
  *
  * Return: 1 (if positive), 0 (if zero), -1 (if negative)
  */
