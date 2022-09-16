@@ -2,29 +2,30 @@
 #include "main.h"
 
 /**
- * main - take the fizz-buzz challenge.
+ * main - FizzBuzz
  *
- * Return: Always 0
+ * Description: prints the numbers 1 - 100 w/
+ * Fizz for multiples of 3, Buzz for multiples of 5,
+ * and FizzBuzz for multiples of both
  *
+ * Return: always 0
  */
-
 int main(void)
 {
-	int n;
+	int i;
 
-	for (n = 1; n < 101; n++)
+	for (i = 1; i <= 100; i++)
 	{
-		if ((n % 5) == 0 && (n % 3) == 0)
-			printf("FizzBuzz ");
-		else if ((n % 5) == 0)
-			if (n == 100)
-				printf("Buzz ");
-			else
-				printf("Buzz ");
-		else if ((n % 3) == 0)
-			printf("Fizz ");
+		if (i % 15 == 0)
+			printf("FizzBuzz");
+		else if (i % 3 == 0)
+			printf("Fizz");
+		else if (i % 5 == 0)
+			printf("Buzz");
 		else
-			printf("%d ", n);
+			printf("%i", i);
+		if (i < 100)
+			printf(" ");
 	}
 	printf("\n");
 	return (0);
