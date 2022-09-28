@@ -3,9 +3,16 @@
 /**
  * _puts_recursion - prints a string, followed by a new line.
  * @s: string
- * Return: void.
+ * Return: void._putchar(*s);
+	_puts_recursion(s + 1);
  */
 void _puts_recursion(char *s)
 {
-	puts(s);
+	if (*s)
+	{
+		_putchar(*s);
+		_puts_recursion(s + 1);
+	}
+	else
+		_putchar(10);
 }
